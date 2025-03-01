@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
     <!-- -- tailwindcss Cdn --  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <!-- -- font --  -->
+    <!-- -- font -- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- --  -->
+    <!-- - Raw Css -  -->
     <style>
         .text-green {
             color: #00303C;
@@ -24,15 +24,20 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .primary-btn{
+        .primary-btn {
             background-color: #3752FD;
             padding: 10px 20px;
             color: white;
             border-radius: 10px;
         }
-        .primary-btn:hover{
+
+        .primary-btn:hover {
             background-color: #3751fd69;
             transition: 0.3s;
+        }
+
+        .primary-btn:active {
+            transform: scale(0.95);
         }
     </style>
 </head>
@@ -55,7 +60,7 @@
                 </div>
             </div>
         </header>
-        <section class="flex mt-5">
+        <section class="flex mt-5 gap-5">
             <main class="w-9/12 bg-white  rounded-xl pb-5">
                 <div class="flex gap-5 m-5">
 
@@ -80,7 +85,7 @@
                         </div>
                         <div>
                             <p class=" text-green">Wed, </p>
-                            <h4 class="font-bold text-green text-2xl">Jul 28 2025</h4>
+                            <h4 class="font-bold text-green text-[#20px]">Jul 28 2025</h4>
                         </div>
                     </div>
                 </div>
@@ -94,99 +99,110 @@
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
-                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for overlapping...</p>
+                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
+                            overlapping...</p>
                         <!-- -- dotted border  -->
                         <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] my-2 ">
                         </div>
-                            <div class="flex items-center gap-2 justify-between">
-                                <div>
-                                    <small class="text-green-900">Deadline</small>
-                                    <p class="text-green font-semibold">21 March 2025</p>
-                                </div>
-                                <button class="primary-btn">Complete</button>
+                        <div class="flex items-center gap-2 justify-between">
+                            <div>
+                                <small class="text-green-900">Deadline</small>
+                                <p class="text-green font-semibold">21 March 2025</p>
                             </div>
+                            <button class="primary-btn">Complete</button>
+                        </div>
                     </div>
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
-                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for overlapping...</p>
+                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
+                            overlapping...</p>
                         <!-- -- dotted border  -->
                         <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] my-2 ">
                         </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <small class="text-green-900">Deadline</small>
-                                    <p class="text-green font-semibold">21 March 2025</p>
-                                </div>
-                                <button class="primary-btn">Complete</button>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <small class="text-green-900">Deadline</small>
+                                <p class="text-green font-semibold">21 March 2025</p>
                             </div>
+                            <button class="primary-btn">Complete</button>
+                        </div>
                     </div>
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
-                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for overlapping...</p>
+                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
+                            overlapping...</p>
                         <!-- -- dotted border  -->
                         <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] my-2 ">
                         </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <small class="text-green-900">Deadline</small>
-                                    <p class="text-green font-semibold">21 March 2025</p>
-                                </div>
-                                <button class="primary-btn">Complete</button>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <small class="text-green-900">Deadline</small>
+                                <p class="text-green font-semibold">21 March 2025</p>
                             </div>
+                            <button class="primary-btn">Complete</button>
+                        </div>
                     </div>
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
-                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for overlapping...</p>
+                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
+                            overlapping...</p>
                         <!-- -- dotted border  -->
                         <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] my-2 ">
                         </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <small class="text-green-900">Deadline</small>
-                                    <p class="text-green font-semibold">21 March 2025</p>
-                                </div>
-                                <button class="primary-btn">Complete</button>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <small class="text-green-900">Deadline</small>
+                                <p class="text-green font-semibold">21 March 2025</p>
                             </div>
+                            <button class="primary-btn">Complete</button>
+                        </div>
                     </div>
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
-                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for overlapping...</p>
+                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
+                            overlapping...</p>
                         <!-- -- dotted border  -->
                         <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] my-2 ">
                         </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <small class="text-green-900">Deadline</small>
-                                    <p class="text-green font-semibold">21 March 2025</p>
-                                </div>
-                                <button class="primary-btn">Complete</button>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <small class="text-green-900">Deadline</small>
+                                <p class="text-green font-semibold">21 March 2025</p>
                             </div>
+                            <button class="primary-btn">Complete</button>
+                        </div>
                     </div>
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
-                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for overlapping...</p>
+                        <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
+                            overlapping...</p>
                         <!-- -- dotted border  -->
                         <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] my-2 ">
                         </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <small class="text-green-900">Deadline</small>
-                                    <p class="text-green font-semibold">21 March 2025</p>
-                                </div>
-                                <button class="primary-btn">Complete</button>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <small class="text-green-900">Deadline</small>
+                                <p class="text-green font-semibold">21 March 2025</p>
                             </div>
+                            <button class="primary-btn">Complete</button>
+                        </div>
                     </div>
-
             </main>
 
-
-            <aside>
-                <h1>Hi I'am Aside</h1>
+            <aside class="h-screen w-1/4 bg-white rounded-xl">
+                <div
+                    class="flex items-center justify-center flex-col gap-4 border-b-2 border-dashed border-[rgba(55, 82, 253, 0.20)] pb-5 mt-5">
+                    <div class="flex gap-3">
+                        <img src="./assets/activity.png" alt="">
+                        <h3 class="text-green font-bold">Activity Log</h3>
+                    </div>
+                    <button class="primary-btn">Clear History</button>
+                </div>
             </aside>
         </section>
     </section>
