@@ -24,7 +24,7 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .primary-btn{
+        .primary-btn {
             background-color: #3752FD;
             padding: 10px 20px;
             color: white;
@@ -39,6 +39,20 @@
         .primary-btn:active {
             transform: scale(0.95);
         }
+
+        .primary-btn:disabled,
+        .primary-btn[disabled] {
+            background-color: #3751fd73;
+            padding: 10px 20px;
+            color: rgb(73, 73, 73);
+            border-radius: 10px;
+            &:active{
+            transform: scale(1);
+
+            }
+
+        }
+
     </style>
 </head>
 
@@ -70,13 +84,13 @@
                         </div>
                         <div>
                             <p class=" text-green">Task Assigned </p>
-                            <h4 class="font-bold text-green text-2xl">06</h4>
+                            <h4 id="total-task" class="font-bold text-green text-2xl">06</h4>
                         </div>
                     </div>
                     <div
                         class="bg-gradient-to-r from-[#6C7FFA] to-[#9BA8F8] flex items-center  gap-3 rounded-xl   cursor-pointer py-5 px-4 w-2/4">
                         <img src="./assets/board.png" alt="calender">
-                        <p class="text-[24px] text-white">Discover Something New Today!</p>
+                        <p id="blog-in" class="text-[24px] text-white">Discover Something New Today!</p>
                     </div>
 
                     <div class="w-1/4 bg-[#F4F7FF] flex items-center  gap-3 rounded-xl   cursor-pointer py-5 px-4">
@@ -96,7 +110,7 @@
                 <!-- -- main cards -- -->
                 <div class="grid xl:grid-cols-3 mx-5 gap-6 md:grid-cols-1 lg:grid-cols-2">
                     <!-- card  -->
-                    <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
+                    <div id="card-1" class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
                         <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
                         <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
                         <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
@@ -109,12 +123,12 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button id="first-btn" class="primary-btn">Complete</button>
+                            <button onclick="taskComplete('card-1')" class="primary-btn ">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
-                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
-                        <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
+                    <div id="card-2" class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
+                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">CloudSync</h4>
+                        <h3 class="text-2xl text-green">Add Dark Mode</h3>
                         <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
                             overlapping...</p>
                         <!-- -- dotted border  -->
@@ -125,12 +139,12 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button class="primary-btn">Complete</button>
+                            <button onclick="taskComplete('card-2')" class="primary-btn">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
-                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
-                        <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
+                    <div id="card-3" class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
+                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">SwiftPay</h4>
+                        <h3 class="text-2xl text-green">Optimize Home page </h3>
                         <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
                             overlapping...</p>
                         <!-- -- dotted border  -->
@@ -141,12 +155,12 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button class="primary-btn">Complete</button>
+                            <button onclick="taskComplete('card-3')" class="primary-btn">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
-                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
-                        <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
+                    <div id="card-4" class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
+                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">Meta</h4>
+                        <h3 class="text-2xl text-green">Add new emoji 🤲 </h3>
                         <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
                             overlapping...</p>
                         <!-- -- dotted border  -->
@@ -157,12 +171,12 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button class="primary-btn">Complete</button>
+                            <button onclick="taskComplete('card-4')" class="primary-btn">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
-                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
-                        <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
+                    <div id="card-5" class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
+                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">Google LLC</h4>
+                        <h3 class="text-2xl text-green">Integrate OpenAI API </h3>
                         <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
                             overlapping...</p>
                         <!-- -- dotted border  -->
@@ -173,12 +187,12 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button class="primary-btn">Complete</button>
+                            <button onclick="taskComplete('card-5')" class="primary-btn">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
-                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">ShopEase</h4>
-                        <h3 class="text-2xl text-green">Fix Mobile Button Issue </h3>
+                    <div id="card-6" class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
+                        <h4 class="bg-white py-2 px-4 w-fit rounded-lg text-start">Glassdoar</h4>
+                        <h3 class="text-2xl text-green">Improve Job searching</h3>
                         <p class="bg-white p-3 rounded-lg text-slate-500 text-">Debug using Chrome DevTools, check for
                             overlapping...</p>
                         <!-- -- dotted border  -->
@@ -189,7 +203,7 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button class="primary-btn">Complete</button>
+                            <button onclick="taskComplete('card-6')" class="primary-btn">Complete</button>
                         </div>
                     </div>
                 </div>

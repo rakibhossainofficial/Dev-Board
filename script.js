@@ -1,3 +1,4 @@
+// random color change
 const colorChange = document.getElementById("colorchange-btn");
 
 colorChange.addEventListener("click", function(){
@@ -6,8 +7,7 @@ colorChange.addEventListener("click", function(){
 })
 
 
-
-
+// Current Date and day
 
 const fixedMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
@@ -27,10 +27,30 @@ let domDate = document.getElementById("date");
 domDate.innerHTML =   `${month.slice(0,3)} ${date} ${year}`
 
 
-console.log(`${year}, ${month}, ${date}, ${day}`);
+// blog
+document.getElementById("blog-in").addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.href = "./blog.html";
+})
+
+// card 
 
 
+let totalTask = 6;
+const totalTaskDom = document.getElementById("total-task");
+totalTaskDom.innerHTML =    `0${totalTask}`; 
 
+function taskComplete(id){
+    const domCard = document.getElementById(id)
+    const cardButton = domCard.getElementsByTagName("button")[0]
+    cardButton.setAttribute("disabled", true)
 
-
+    totalTask -= 1;
+    totalTaskDom.innerHTML = `0${totalTask}`;
+    alert("Board Updated Successfully")
+    if(totalTask === 0){
+        alert("Congrates!! You Have Complete All The Task")
+    }
+     
+}
 
