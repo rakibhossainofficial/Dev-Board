@@ -35,6 +35,9 @@ document.getElementById("blog-in").addEventListener("click", function(event){
 
 // card 
 
+let completedTask = 23;
+const completedTaskDom = document.getElementById("completed-task");
+completedTaskDom.innerHTML = completedTask;
 
 let totalTask = 6;
 const totalTaskDom = document.getElementById("total-task");
@@ -48,6 +51,10 @@ function taskComplete(id){
     totalTask -= 1;
     totalTaskDom.innerHTML = `0${totalTask}`;
     alert("Board Updated Successfully")
+
+    completedTask += 1;
+    completedTaskDom.innerHTML = completedTask;
+
     if(totalTask === 0){
         alert("Congrates!! You Have Complete All The Task")
     }
