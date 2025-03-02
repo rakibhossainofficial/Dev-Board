@@ -11,9 +11,9 @@
     <!-- -- font -- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
     <!-- - Raw Css -  -->
     <style>
         .text-green {
@@ -24,7 +24,7 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .primary-btn {
+        .primary-btn{
             background-color: #3752FD;
             padding: 10px 20px;
             color: white;
@@ -42,7 +42,7 @@
     </style>
 </head>
 
-<body class="bg-[#F4F7FF]">
+<body class="body-bg bg-[#F4F7FF]">
     <section class="h-screen max-w-screen-2xl mx-auto p-5 sm:px-10 lg:px-20 xl:px-24 py-5">
         <!-- -- header --  -->
         <header class="bg-white p-5 flex items-center justify-between rounded-xl  border-gray-500">
@@ -55,7 +55,7 @@
                     <img src="./assets/checkbox.png" alt="checkbox">
                     <p class="font-bold text-3xl">23</p>
                 </div>
-                <div class="p-2 bg-[#F4F7FF] rounded-full ">
+                <div id="colorchange-btn" class="p-2 bg-[#F4F7FF] rounded-full cursor-pointer">
                     <img src="./assets/theme-btn.png" alt="theme-btn">
                 </div>
             </div>
@@ -70,7 +70,7 @@
                         </div>
                         <div>
                             <p class=" text-green">Task Assigned </p>
-                            <h4 class="font-bold text-green text-2xl">05</h4>
+                            <h4 class="font-bold text-green text-2xl">06</h4>
                         </div>
                     </div>
                     <div
@@ -84,8 +84,8 @@
                             <img class="w-full" src="./assets/calender.png" alt="calender">
                         </div>
                         <div>
-                            <p class=" text-green">Wed, </p>
-                            <h4 class="font-bold text-green text-[#20px]">Jul 28 2025</h4>
+                            <p id="day" class=" text-green"> </p>
+                            <h4 id="date" class="font-bold text-green text-[#20px]"> </h4>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                                 <small class="text-green-900">Deadline</small>
                                 <p class="text-green font-semibold">21 March 2025</p>
                             </div>
-                            <button class="primary-btn">Complete</button>
+                            <button id="first-btn" class="primary-btn">Complete</button>
                         </div>
                     </div>
                     <div class="bg-[#F4F7FF] p-6 flex flex-col gap-3 rounded-lg">
@@ -192,6 +192,7 @@
                             <button class="primary-btn">Complete</button>
                         </div>
                     </div>
+                </div>
             </main>
 
             <aside class="h-screen w-1/4 bg-white rounded-xl">
@@ -206,6 +207,8 @@
             </aside>
         </section>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
