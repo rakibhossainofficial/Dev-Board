@@ -69,7 +69,7 @@ const totalTaskDom = document.getElementById("total-task");
 totalTaskDom.innerHTML = `0${totalTask}`;
 
 function taskComplete(id) {
-  let parentElement = document.getElementById("aside")
+  let parentElement = document.getElementById("aside");
   parentElement.innerHTML = "";
   const domCard = document.getElementById(id);
   const cardTitle = domCard.getElementsByTagName("h3")[0].innerText;
@@ -92,16 +92,15 @@ function taskComplete(id) {
     alert("Congrates!! You Have Complete All The Task");
   }
 
-
-
-  for(task of taskHistory){
-
+  for (task of taskHistory) {
     let history = document.createElement(`p`);
     history.innerHTML = task;
     history.classList.add("history-text");
-    parentElement.appendChild(history)
-
+    parentElement.appendChild(history);
   }
 }
 
-
+function clearHistory() {
+  document.getElementById("aside").innerHTML = "";
+  taskHistory.length = 0;
+}
